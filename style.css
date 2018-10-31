@@ -1,0 +1,77 @@
+h1 {
+	font-family: futura;
+	color: lightblue;
+	font-size: 40px;
+}
+
+.sun-wrapper {
+	height: 600px;
+	width: 450px;
+	overflow: hidden;
+	transition: background 4s ease-in-out;
+	background-color: lightblue;
+	margin: auto;
+}
+
+.sun-wrapper:hover {
+	background-color: transparent blue;
+}
+
+.sun-wrapper:hover .sun {
+	background-color: lightblue;
+	transform: translateX(600px);
+}
+
+.sun-wrapper:hover .sun1 {
+	background-color: black;
+	transform: translateX(600px);
+}
+
+.sun {
+	width: 138px;
+	height: 50px;
+	background-color: black;
+	border-radius: 5px;
+	transition-property: background-color, transform; 
+	transition-duration: 5s, 5s;
+	transition-timing-function: ease-in-out;
+}
+
+.sun1 {
+	width: 220px;
+	height: 50px;
+	background-color: lightblue;
+	border-radius: 5px;
+	transition-property: background-color, transform; 
+	transition-duration: 5s, 5s;
+	transition-timing-function: ease-in-out;
+	margin-top: 450px;
+}
+
+@keyframes riseandset {
+	from {
+		transform: translateY(600px);
+	}
+
+	to {
+		transform: translateY(-600px);
+		background-color: blue;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
